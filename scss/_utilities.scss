@@ -24,8 +24,8 @@
  (src Andy Bell)
  */
 .region {
-  padding-top: var(--region-space, var(--space-l-2xl));
-  padding-bottom: var(--region-space, var(--space-l-2xl));
+  padding-top: var(--region-space, var(--space-xl-2xl));
+  padding-bottom: var(--region-space, var(--space-xl-2xl));
 }
 
 .sr-only {
@@ -56,6 +56,18 @@
 
 .text-bold {
   font-weight: $font-bold;
+}
+
+.text-s {
+  font-size: var(--step--1);
+}
+
+.text-m {
+  font-size: var(--step-1);
+}
+
+.text-l {
+  font-size: var(--step-2);
 }
 
 .color-black {
@@ -125,4 +137,25 @@
 
 .margin-block-end-a {
   margin-block-end: auto;
+}
+
+//background colours
+.bg-gray {
+  background-color: $light-gray;
+}
+
+.bg-violet {
+  background-color: $moderate-violet;
+}
+
+.bg-white {
+  background-color: $white;
+}
+
+.bg-dark-black-blue {
+  background-color: $dark-blackish-blue;
+}
+
+.bg-dark-gray-blue {
+  background-color: $dark-grayish-blue;
 }

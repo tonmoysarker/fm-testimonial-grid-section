@@ -19,12 +19,12 @@ $light-grayish-blue: hsl(210, 46%, 95%);
 
 // font colours
 $font-black: $dark-blackish-blue;
-$font-black-50: hsl($dark-blackish-blue h s l / 0.5);
-$font-black-70: hsl($dark-blackish-blue h s l / 0.7);
+$font-black-50: rgba($dark-blackish-blue, 0.5);
+$font-black-70: rgba($dark-blackish-blue, 0.7);
 
 $font-white: $white;
-$font-white-50: hsl($white h s l / 0.5);
-$font-white-70: hsl($white h s l / 0.7);
+$font-white-50: rgba($white, 0.5);
+$font-white-70: rgba($white, 0.7);
 
 $transition-base: 250ms ease;
 $tracking-s: -0.075ch;

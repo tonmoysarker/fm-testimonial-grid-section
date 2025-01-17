@@ -5,13 +5,13 @@
     var(--grid-placement, auto-fill),
     minmax(var(--grid-min-item-size, 16rem), 1fr)
   );
-  gap: (--gutter, --space-s-l);
+  gap: var(--gutter, var(--space-s-l));
 }
 
 //This is for creating flexbox
 .flex {
   display: flex;
-  gap: (--gutter, --space-s-l);
+  gap: var(--gutter, var(--space-s-l));
 }
 
 .flex-column {

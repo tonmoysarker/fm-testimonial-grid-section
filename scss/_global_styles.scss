@@ -1,0 +1,23 @@
+body {
+  width: 100%;
+  font-size: var(--step-0);
+}
+
+h1,
+h2,
+h3 {
+  letter-spacing: $tracking-s;
+}
+
+section {
+  border: 1px solid red;
+}
+
+picture{
+    border: 1px solid blue;
+}
+img {
+  max-inline-size: 100%;
+  object-fit: cover;
+  block-size: auto;
+}
