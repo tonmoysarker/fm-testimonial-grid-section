@@ -1,0 +1,30 @@
+// This creates responsive grid automatically
+.auto-grid {
+  display: grid;
+  grid-template-columns: repeat(
+    var(--grid-placement, auto-fill),
+    minmax(var(--grid-min-item-size, 16rem), 1fr)
+  );
+  gap: (--gutter, --space-s-l);
+}
+
+//This is for creating flexbox
+.flex {
+  display: flex;
+  gap: (--gutter, --space-s-l);
+}
+
+.flex-column {
+  flex-direction: column;
+}
+.flex-row-reverse {
+  flex-direction: row-reverse;
+}
+
+.flex-column-reverse {
+  flex-direction: column-reverse;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}

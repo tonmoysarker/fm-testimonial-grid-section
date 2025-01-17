@@ -1,3 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap");
+:root {
+  /* @link https://utopia.fyi/type/calculator?c=375,13,1.2,1440,15,1.25,3,1,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
+  --step--1: clamp(0.6771rem, 0.6514rem + 0.1095vw, 0.75rem);
+  --step-0: clamp(0.8125rem, 0.7685rem + 0.1878vw, 0.9375rem);
+  --step-1: clamp(0.975rem, 0.9057rem + 0.2958vw, 1.1719rem);
+  --step-2: clamp(1.17rem, 1.0662rem + 0.443vw, 1.4648rem);
+  --step-3: clamp(1.404rem, 1.2536rem + 0.6416vw, 1.8311rem);
+  /* @link https://utopia.fyi/space/calculator?c=375,13,1.2,1440,15,1.25,3,1,&s=0.75,1.5|2|3|4,s-l&g=s,l,xl,12 */
+  --space-xs: clamp(0.625rem, 0.603rem + 0.0939vw, 0.6875rem);
+  --space-s: clamp(0.8125rem, 0.7685rem + 0.1878vw, 0.9375rem);
+  --space-m: clamp(1.25rem, 1.184rem + 0.2817vw, 1.4375rem);
+  --space-l: clamp(1.625rem, 1.537rem + 0.3756vw, 1.875rem);
+  --space-xl: clamp(2.4375rem, 2.3055rem + 0.5634vw, 2.8125rem);
+  --space-2xl: clamp(3.25rem, 3.0739rem + 0.7512vw, 3.75rem);
+  /* One-up pairs */
+  --space-xs-s: clamp(0.625rem, 0.515rem + 0.4695vw, 0.9375rem);
+  --space-s-m: clamp(0.8125rem, 0.5924rem + 0.939vw, 1.4375rem);
+  --space-m-l: clamp(1.25rem, 1.0299rem + 0.939vw, 1.875rem);
+  --space-l-xl: clamp(1.625rem, 1.2069rem + 1.784vw, 2.8125rem);
+  --space-xl-2xl: clamp(2.4375rem, 1.9754rem + 1.9718vw, 3.75rem);
+  /* Custom pairs */
+  --space-s-l: clamp(0.8125rem, 0.4384rem + 1.5962vw, 1.875rem);
+  --gutter: var(--space-s-m);
+  --border-radius: var(--step-0);
+}
+
 .sr-only {
   /* for accessibility */
   position: absolute; /* Remove it from the document flow */
