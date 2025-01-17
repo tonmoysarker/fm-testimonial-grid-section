@@ -16,12 +16,16 @@
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/main.css" />
   </head>
-  <body class="barlow">
-    <main>
+  <body class="barlow bg-light-gray-blue">
+    <main class="wrapper">
       <h1 class="sr-only">Testimonial Page</h1>
-      <article class="testimonial-section wrapper auto-grid region" data-layout="masonry">
+      <article
+        class="testimonial-section auto-grid region"
+        data-layout="custom"
+      >
         <section
           class="testimonial-card flex flex-column bg-violet color-white"
+          flat"
         >
           <h2 class="sr-only">User Testimony</h2>
           <div class="author flex">
@@ -49,6 +53,7 @@
         </section>
         <section
           class="testimonial-card flex flex-column bg-dark-gray-blue color-white"
+          square"
         >
           <h2 class="sr-only">User Testimony</h2>
           <div class="author flex">
@@ -68,7 +73,10 @@
             one of the best investments I've made in myself. ”
           </p>
         </section>
-        <section class="testimonial-card flex flex-column bg-white color-black">
+        <section
+          class="testimonial-card flex flex-column bg-white color-black"
+          square"
+        >
           <h2 class="sr-only">User Testimony</h2>
           <div class="author flex">
             <picture
@@ -88,6 +96,7 @@
         </section>
         <section
           class="testimonial-card flex flex-column bg-dark-black-blue color-white"
+          flat"
         >
           <h2 class="sr-only">User Testimony</h2>
           <div class="author flex">
@@ -112,7 +121,10 @@
             smart and amazing people. ”
           </p>
         </section>
-        <section class="testimonial-card flex flex-column bg-white color-black">
+        <section
+          class="testimonial-card flex flex-column bg-white color-black"
+          tall"
+        >
           <h2 class="sr-only">User Testimony</h2>
           <div class="author flex">
             <picture
@@ -142,13 +154,13 @@
         </section>
       </article>
     </main>
-    <div class="attribution">
+    <footer class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
       >. Coded by
       <a href="https://github.com/tonmoysarker" target="_blank">Tonmoy Sarker</a
       >.
-    </div>
+    </foo>
   </body>
 </html>

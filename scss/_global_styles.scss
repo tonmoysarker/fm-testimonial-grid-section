@@ -9,15 +9,13 @@ h3 {
   letter-spacing: $tracking-s;
 }
 
-section {
-  border: 1px solid red;
-}
-
-picture{
-    border: 1px solid blue;
-}
 img {
   max-inline-size: 100%;
-  object-fit: cover;
   block-size: auto;
+  object-fit: cover;
+}
+
+footer {
+  text-align: center;
+  font-size: var(--step-1);
 }

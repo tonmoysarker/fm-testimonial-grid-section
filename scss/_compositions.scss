@@ -8,6 +8,13 @@
   gap: var(--gutter, var(--space-s-l));
 }
 
+.auto-grid[data-layout="custom"]{
+  --grid-placement: auto-fit;
+  --grid-min-item-size: clamp(16rem, 25%, 20rem);
+  grid-template-rows: masonry;
+  align-items: center;
+}
+
 //This is for creating flexbox
 .flex {
   display: flex;

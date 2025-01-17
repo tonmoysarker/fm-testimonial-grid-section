@@ -36,25 +36,29 @@ h3 {
   letter-spacing: -0.075ch;
 }
 
-section {
-  border: 1px solid red;
-}
-
-picture {
-  border: 1px solid blue;
-}
-
 img {
   max-inline-size: 100%;
+  block-size: auto;
   -o-object-fit: cover;
      object-fit: cover;
-  block-size: auto;
+}
+
+footer {
+  text-align: center;
+  font-size: var(--step-1);
 }
 
 .auto-grid {
   display: grid;
   grid-template-columns: repeat(var(--grid-placement, auto-fill), minmax(var(--grid-min-item-size, 16rem), 1fr));
   gap: var(--gutter, var(--space-s-l));
+}
+
+.auto-grid[data-layout=custom] {
+  --grid-placement: auto-fit;
+  --grid-min-item-size: clamp(16rem, 25%, 20rem);
+  grid-template-rows: masonry;
+  align-items: center;
 }
 
 .flex {
@@ -232,7 +236,28 @@ img {
   background-color: hsl(217, 19%, 35%);
 }
 
+.bg-light-gray {
+  background-color: hsl(0, 0%, 81%);
+}
+
+.bg-light-gray-blue {
+  background-color: hsl(210, 46%, 95%);
+}
+
 .testimonial-card {
   border-radius: var(--border-radius);
-  padding: var(--gutter);
+  padding: var(--space-m-l);
+  box-shadow: 32px 32px 92px -44px rgba(0, 0, 0, 0.47);
+}
+.testimonial-card .author {
+  align-items: center;
+}
+.testimonial-card .author picture {
+  border-radius: 50%;
+  overflow: hidden;
+  border: 2px solid hsl(0, 0%, 81%);
+}
+.testimonial-card .testimony > strong {
+  display: inline-block;
+  margin-bottom: var(--space-m-l);
 }/*# sourceMappingURL=main.css.map */

@@ -1,4 +1,21 @@
 .testimonial-card {
   border-radius: var(--border-radius);
-  padding: var(--gutter);
+  padding: var(--space-m-l);
+  & .author {
+    align-items: center;
+
+    picture {
+      border-radius: 50%;
+      overflow: hidden;
+      border: 2px solid $light-gray;
+    }
+  }
+
+  & .testimony > strong {
+    display: inline-block;
+    margin-bottom: var(--space-m-l);
+  }
+  -webkit-box-shadow: $box-shadow;
+  -moz-box-shadow: $box-shadow;
+  box-shadow: $box-shadow;
 }
