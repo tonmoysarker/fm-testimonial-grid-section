@@ -1,0 +1,12 @@
+.sr-only {
+  /* for accessibility */
+  position: absolute; /* Remove it from the document flow */
+  width: 1px; /* Reduce size to the minimum */
+  height: 1px; /* Same as width */
+  margin: 0; /* No margin */
+  padding: 0; /* No padding */
+  overflow: hidden; /* Hide overflow */
+  clip: rect(0, 0, 0, 0); /* Clip the element */
+  white-space: nowrap; /* Prevent line breaks */
+  border: 0; /* No border */
+}/*# sourceMappingURL=main.css.map */
