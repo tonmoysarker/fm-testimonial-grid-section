@@ -1,6 +1,21 @@
 .testimonial-card {
   border-radius: var(--border-radius);
   padding: var(--space-m-l);
+
+  &:nth-child(1) {
+    position: relative;
+    & > * {
+      z-index: 1;
+    }
+    img.quote-svg {
+      position: absolute;
+      top: 1em;
+      right: 4em;
+      z-index: 0;
+      width: calc(3 * var(--space-xl-2xl));
+      height: calc(3 * var(--space-xl-2xl));
+    }
+  }
   & .author {
     align-items: center;
 
